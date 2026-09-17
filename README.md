@@ -125,7 +125,7 @@ This is useful because weather forecast data are multidimensional rather than or
 
 The first step is to open a real ECMWF +24 hour temperature forecast and inspect the global model grid.
 
-![Global Temperature Forecast](images/global_temperature_forecast.png)
+![Global Temperature Forecast](Outputs/ECMWF%20%2B24%20Hour%202%20m%20Temperature%20Forecast.png)
 
 Temperature values are originally provided in Kelvin and are converted to Celsius using:
 
@@ -139,7 +139,7 @@ Temperature (°C) = Temperature (K) - 273.15
 
 The global forecast grid is restricted to an approximate Germany bounding box before city-level values are extracted.
 
-![Germany Temperature Forecast](images/germany_temperature_forecast.png)
+![Germany Temperature Forecast](Outputs/ECMWF%20%2B24%20Hour%20Temperature%20Forecast%20-%20Germany.png)
 
 This step demonstrates spatial subsetting of gridded meteorological data.
 
@@ -288,7 +288,7 @@ These results describe only the small Berlin demonstration sample and should **n
 
 ## 🌡️ Forecast vs Observed Temperature
 
-![Temperature Forecast vs Observed](images/temperature_forecast_vs_observed.png)
+![Temperature Forecast vs Observed](Outputs/ECMWF%20Forecast%20vs%20Observed%20Temperature%20-%20Berlin.png)
 
 The temperature forecasts remain relatively close to the observed values across the four selected forecast cases.
 
@@ -296,7 +296,7 @@ The temperature forecasts remain relatively close to the observed values across 
 
 ## 💨 Forecast vs Observed Wind Speed
 
-![Wind Forecast vs Observed](images/wind_forecast_vs_observed.png)
+![Wind Forecast vs Observed](Outputs/ECMWF%20Forecast%20vs%20Observed%20Wind%20Speed%20-%20Berlin.png)
 
 Wind-speed forecasts are also close to the observed values in this small sample.
 
@@ -304,7 +304,7 @@ Wind-speed forecasts are also close to the observed values in this small sample.
 
 ## ☁️ Forecast vs Observed Cloud Cover
 
-![Cloud Cover Forecast vs Observed](images/cloud_cover_forecast_vs_observed.png)
+![Cloud Cover Forecast vs Observed](Outputs/ECMWF%20Forecast%20vs%20Observed%20Cloud%20Cover%20-%20Berlin.png)
 
 Cloud cover shows larger differences, particularly in the +48 hour case.
 
@@ -312,7 +312,7 @@ Cloud cover shows larger differences, particularly in the +48 hour case.
 
 ## ☀️ Forecast vs Observed Solar Radiation
 
-![Solar Radiation Forecast vs Observed](images/solar_radiation_forecast_vs_observed.png)
+![Solar Radiation Forecast vs Observed](Outputs/ECMWF%20Forecast%20vs%20Observed%20Solar%20Radiation%20-%20Berlin.png)
 
 The daytime solar-radiation forecast differs from the observed value, while the nighttime cases contain zero solar radiation.
 
@@ -351,7 +351,7 @@ The output is normalized between:
 1 = approximate rated generation
 ```
 
-![Wind Power Proxy](images/wind_power_proxy.png)
+![Wind Power Proxy](Outputs/Wind%20Power%20Proxy%20-%20Berlin.png)
 
 The purpose is to demonstrate how a wind-speed forecast error can produce a difference in a simplified generation estimate.
 
@@ -375,7 +375,7 @@ For example:
 1000 W/m² → 1.0
 ```
 
-![Solar Power Proxy](images/solar_power_proxy.png)
+![Solar Power Proxy](Outputs/Solar%20Power%20Proxy%20-%20Berlin.png)
 
 This is **not an actual PV power model**. It does not include panel efficiency, temperature, orientation, shading, inverter losses or installed capacity.
 
@@ -510,7 +510,7 @@ weather-forecast-verification/
 │
 ├── README.md
 ├── weather_forecast_verification.ipynb
-├── images/
+├── Outputs/
 │   ├── global_temperature_forecast.png
 │   ├── germany_temperature_forecast.png
 │   ├── temperature_forecast_vs_observed.png
